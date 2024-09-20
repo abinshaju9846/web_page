@@ -1,0 +1,759 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #6e93f7;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4070f4;
+}
+/* navbar styling */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+    background: #507459; /* Very light green color */
+  }
+  
+  nav .navbar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  
+  nav .navbar .logo a {
+    font-weight: 500;
+    font-size: 35px;
+    color: #09090a;
+  }
+  
+  nav .navbar .menu {
+    display: flex;
+    position: relative;
+  }
+  
+  nav .navbar .menu li {
+    list-style: none;
+    margin: 0 8px;
+  }
+  
+  .navbar .menu a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0E2431;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+  }
+  
+  .navbar .menu a:hover {
+    color: #4070f4;
+  }
+  
+  /* Help section styling */
+  .help-section {
+    display: flex;
+    align-items: center;
+    color: #0E2431; /* Dark color for text */
+  }
+  
+  .chat-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+  
+  /* Home section styling */
+  .home {
+    height: 100vh;
+    width: 100%;
+    background: url("images/green_mountains_ii_display.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background: url("images/green_mountains_ii_display.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .home .home-content {
+    width: 90%;
+    text-align: center; /* Center text */
+  }
+  
+  .home .text-one {
+    font-size: 75px; /* Font size for text-one */
+    color: white; /* Changed to white */
+    font-weight: bold; /* Bold text */
+  }
+  
+  .home .text-two {
+    font-size: 75px; /* Font size for text-two */
+    color: white; /* Changed to white */
+    font-weight: bold; /* Bold text */
+    margin-left: -3px;
+  }
+  
+  .home .text-three {
+    font-size: 20px; /* Font size for text-three */
+    color: white; /* Changed to white */
+    margin: 5px 0;
+  }
+  
+  .migrate {
+    color: green; /* Change color of "migrate" to green */
+  }
+  
+  .button {
+    margin-top: 20px; /* Add some space above the button */
+  }
+  
+  .button button {
+    background-color: green; /* Button color changed to green */
+    color: white; /* Text color for the button */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 18px; /* Font size for the button */
+    cursor: pointer; /* Cursor change on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .button button:hover {
+    background-color: darkgreen; /* Darker green on hover */
+  }
+  
+
+.home .button{
+  margin: 14px 0;
+}
+.home .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #3bea3c;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+.home .button button:hover{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+
+/* About Section Styling */
+/* Those Elements Where We Have Apply Same CSS,
+ I'm Selecting Directly 'Section Tag' and 'Class'  */
+ body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background-color: #507459;
+    display: flex; /* Flex container for horizontal alignment */
+    align-items: flex-start; /* Align items to the top */
+    padding: 40px 0;
+    width: 100%; /* Set width for the section */
+    margin: 0 auto; /* Center align */
+}
+
+.collage {
+    width: 50%; /* Left side width */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.collage img {
+    width: 100%;
+    height: 200px; /* Set height to align with paragraphs */
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.content {
+    width: 50%; /* Right side width */
+    padding-left: 20px; /* Space between sections */
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.title span {
+    color: #095403;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+.about-details {
+    display: block; /* Make it visible */
+    margin-top: 20px;
+}
+
+.sent-one,
+.sent-two {
+    font-size: 50px; /* Increase size */
+    text-align: left; 
+    color: #062904;/* Center align */
+}
+
+.sent-three {
+    font-size: 14px; /* Make smaller */
+    text-align: left; /* Ensure text is justified */
+    line-height: 1.5; /* Improve readability */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.sent-four-five {
+    display: flex; /* Flex container for inline items */
+    justify-content: space-between; /* Space out the two sentences */
+    margin-top: 10px; /* Space above */
+}
+
+.sent-four,
+.sent-five {
+    display: flex; /* Flex container for inline elements */
+    align-items: center; /* Center align items */
+    margin-right: 20px; /* Space between the two sections */
+}
+
+.sent-four-description,
+.sent-five-description {
+    font-size: 12px; /* Font size for descriptions */
+    text-align: left; /* Align text to the left */
+    max-width: 200px; /* Limit width to avoid overflow */
+}
+
+.highlight {
+    font-size: 16px; /* Make specific words bigger */
+}
+
+.tick {
+    margin-right: 8px; /* Space between tick and text */
+    width: 18px; /* Size of tick */
+    height: 18px; /* Size of tick */
+}
+
+.button {
+    margin: 16px 0;
+}
+
+.button a {
+    outline: none;
+    padding: 4px 10px; /* Smaller padding */
+    border-radius: 2px;
+    font-size: 20px; /* Smaller font size */
+    font-weight: 400;
+    background: #28a745; /* Green button color */
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.button a:hover {
+    border-color: #28a745;
+    background-color: #fff;
+    color: #28a745;
+}
+
+
+
+ 
+ 
+
+/* My Services CSS */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.services {
+    position: relative;
+    padding: 40px 0;
+    background-color: #6a7b67; /* Fallback background color */
+    overflow: hidden;
+}
+
+.services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    background-image: 
+        linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6)),
+        url('images/image2.jpg'); /* Your background image */
+    background-size: 60% auto; 
+    background-position: right center;
+    z-index: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.title span {
+    color: #095403;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to keep boxes in the same line */
+    justify-content: space-between;
+}
+
+.box {
+    margin: 20px 10px; /* Adjust margin for spacing */
+    width: calc(33.33% - 20px); /* Adjust width for three boxes */
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: default;
+    transition: all 0.4s ease;
+    background-color: rgb(193, 189, 182);
+}
+
+.box:hover {
+    background: #4070f4;
+    color: #fff;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    background: #07721e;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;
+}
+
+.box:hover .icon {
+    background-color: #fff;
+    color: #4070f4;
+}
+
+.box:hover .topic,
+.box:hover p {
+    color: #0E2431;
+    transition: all 0.4s ease;
+}
+
+.box:hover .topic,
+.box:hover p {
+    color: #fff;
+}
+
+.additional-details {
+    margin-top: 20px; /* Space above the additional details */
+    text-align: center; /* Center align the text */
+    display: none; /* Initially hidden */
+}
+
+
+
+
+/* Contact Me CSS */
+/* Contact Me CSS */
+/* Contact Me CSS */
+/* Contact Me CSS */
+.contact {
+    background: #023c1f;
+    position: relative;
+    padding: 40px 0; /* Adjust padding as needed */
+}
+
+.contact .content {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.contact .title {
+    position: relative; /* Change to relative for flex alignment */
+}
+
+.contact .title span {
+    color: #fff; /* Change text color to white */
+    font-size: 24px; /* Adjust font size if needed */
+    font-weight: bold; /* Make it bold */
+}
+
+.contact .para-one {
+    margin-top: 6px; /* Decrease space between title and paragraph */
+    color: #fff; /* Change text color to white */
+    font-size: 10px; /* Decrease font size */
+    text-align: left; /* Align text to the left */
+}
+
+.contact .text {
+    display: flex; /* Use flexbox to arrange menu containers and gallery in a row */
+    justify-content: space-between; /* Space them evenly */
+    width: 100%; /* Full width */
+    margin-top: 10px; /* Move it closer to the title */
+}
+
+.menu-container {
+    display: flex; /* Align service and useful links side by side */
+    width: 100%; /* Full width */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.menu-container-one,
+.menu-container-two {
+    margin-right: 40px; /* Space between the two menu containers */
+}
+
+.service-menu,
+.useful-links {
+    color: #fff; /* Change text color to white */
+    font-size: 18px; /* Increase font size */
+    margin-bottom: 5px; /* Space below headings */
+}
+
+.text ul {
+    margin-left: 0; /* Align with the text */
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.text li {
+    color: #fff; /* Text color for list items */
+    margin: 5px 0; /* Space between items */
+}
+
+.gallery {
+    margin-top: 0; /* Remove top margin to align with menu containers */
+    flex-grow: 1; /* Allow the gallery to take remaining space */
+}
+
+.gallery-title {
+    color: #fff; /* Change text color to white */
+    font-size: 18px; /* Adjust font size if needed */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.gallery-images {
+    display: grid; /* Use grid layout for gallery */
+    grid-template-columns: repeat(3, 1fr); /* 3 images in one row */
+    gap: 10px; /* Space between images */
+    width: 70%; /* Adjust as needed */
+}
+
+.gallery img {
+    width: 100%; /* Full width of the grid cell */
+    height: 100px; /* Set a fixed height */
+    border-radius: 5px; /* Rounded corners */
+    object-fit: cover; /* Cover the area without distortion */
+}
+/* Separator CSS */
+.separator {
+    height: 2px; /* Height of the line */
+    background-color: #fff; /* Color of the line */
+    margin: 1px 0; /* Space above and below the line */
+}
+
+
+
+
+/* Footer CSS */
+footer {
+    background: #023c1f;
+    padding: 15px 0;
+    text-align: left; /* Align all text to the left */
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Add horizontal padding */
+}
+
+.footer-content .logo {
+    display: flex; /* Use flexbox to align logo and rights text */
+    align-items: center; /* Center items vertically */
+}
+
+.footer-content .logo img {
+    max-width: 20px; /* Decrease logo size */
+    margin-right: 10px; /* Space between logo and rights text */
+}
+
+.footer-content .links {
+    margin-left: auto; /* Push links to the right */
+}
+
+.footer-content .links a {
+    color: #fff; /* Link color */
+    margin: 0 10px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-content .links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-content .rights {
+    color: #fff; /* Text color for rights */
+    font-size: 14px; /* Adjust font size if needed */
+}
+
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+    section .content{
+      width: 85%;
+    }
+  }
+  @media (max-width: 1000px) {
+    .about .about-details{
+      justify-content: center;
+      flex-direction: column;
+    }
+    .about .about-details .left{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .about-details .right{
+      width: 90%;
+      margin: 40px 0;
+    }
+    .services .boxes .box{
+      margin: 20px 0;
+      width: calc(100% / 2 - 20px);
+    }
+  }
+  @media (max-width: 900px) {
+    .about .left img{
+      height: 350px;
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    nav .navbar{
+      width: 90%;
+    }
+    nav .navbar .menu{
+      position: fixed;
+      left: -100%;
+      top: 0;
+      background: #0E2431;
+      height: 100vh;
+      max-width: 400px;
+      width: 100%;
+      padding-top: 60px;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.5s ease;
+    }
+    .navbar.active .menu{
+      left: 0;
+    }
+    nav .navbar .menu a{
+      font-size: 23px;
+      display: block;
+      color: #fff;
+      margin: 10px 0;
+    }
+    nav.sticky .menu a:hover{
+      color: #4070f4;
+    }
+    nav .navbar .media-icons{
+      display: none;
+    }
+    nav .menu-btn,
+    .navbar .menu .cancel-btn{
+      display: block;
+    }
+    .home .text-two{
+      font-size: 65px;
+    }
+    .home .text-three{
+      font-size: 35px;
+    }
+    .skills .skills-details{
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .skills-details .text{
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .skills-details .boxes{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .services .boxes .box{
+      margin: 20px 0;
+      width: 100%;
+    }
+    .contact .text{
+      width: 100%;
+  }
+  }
+  
+  @media (max-width: 500px){
+    .home .text-two{
+      font-size: 55px;
+    }
+    .home .text-three{
+      font-size: 33px;
+    }
+    .skills-details .boxes .per{
+      font-size: 50px;
+      color: #4070f4;
+    }
+  }
+  
+  
+  
+  
+  
+  .logo {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Center items vertically */
+    font-weight: 900;
+    font-size: 75px;
+    color: #131313; /* Logo font styling */
+  }
+  
+  .logo-img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+  }
+  
+  .logo span {
+    font-size: 24px; /* Increase text size */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  
+  
+  .button {
+    margin-top: 20px; /* Space above the button */
+  }
+  
+  .cv-button {
+    display: inline-block; /* Make it behave like a button */
+    padding: 10px 20px; /* Add padding */
+    background-color: white; /* Default button color */
+    color: #4070f4; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border: 2px solid #4070f4; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  .cv-button:hover {
+    background-color: #4070f4; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+  }
+  /* dropdown css */
+  .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      min-width: 160px;
+      z-index: 1;
+  }
+  
+  .dropdown li {
+      width: 100%;
+  }
+  
+  .dropdown li a {
+      padding: 1rem;
+  }
+  
+  .menu li:hover .dropdown {
+      display: block;
+  }
+  
+  
+  /* help section */
+  .help-section {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 0.9rem;
+  }
+  
+  .chat-logo {
+      width: 16px;
+      height: 16px;
+      margin-right: 0.5rem;
+  }
+  
+
+
